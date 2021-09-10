@@ -1,6 +1,9 @@
 # Speech Emotion Recognition on Emo-DB
 **Frédéric Debraine**, 30/05/2020
 
+[[Slides](https://docs.google.com/presentation/d/1jrhrnrFhnbCY3sCN-q1sAvaHj3hvn4mxlls3v-mVJao/edit?usp=sharing)]
+
+
 # Revisions (13/06/2020):
 - Train/test split based on speaker id to avoid data leakage or overfitting on voices.
 - Replace stratified CV by Group CV to avoid data leakage between train and validation sets.
