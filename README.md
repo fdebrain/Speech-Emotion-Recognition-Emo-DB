@@ -7,6 +7,8 @@
 - Replace ROC-AUC metric by F1 (otherwise we need probability outputs for all models, not possible for ensemble)
 - Making sure the score average mode is on 'weighted' to take into account class imbalance.
 
+<img src="images/pca_projection.png" width=600 height=300>
+
 ### Project structure
 * modules: Python scripts related to ML pipeline.
 * data: Contains Emo-DB dataset.
