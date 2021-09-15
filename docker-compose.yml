@@ -1,0 +1,17 @@
+version: '2.2'
+services:
+    ser:
+        build: .
+        image: ser
+    flask_api:
+        image: ser
+        command: python app.py
+        ports:
+            - 8080:8080
+        mem_reservation: 2048m
+        cpus: 4
+    jupyter_notebook:
+        image: ser
+        command: jupyter notebook --ip 0.0.0.0 --no-browser --allow-root --port 8081 --NotebookApp.token='password'
+        ports:
+            - 8081:8081
